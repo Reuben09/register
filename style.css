@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+*{ 
+    padding: 0;
+    margin: 0;
+     box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+body{
+  background-color: #808080;
+  padding: 2rem;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+form{
+    border: 1px solid #000;
+    display:flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 2rem;
+     font-family: 'nunito', sans-serif;
+    border-radius: 0.5rem;
+    background-color: rgb(244, 244, 244);
+}
+.form-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+.form-header p{
+   font-size: 1.1rem;
+   text-align: center;
+}
+.form-input{
+    display: flex;
+}
+input{
+    width: 100%;
+    padding: 0.3rem;
+    margin-bottom: 0.7rem;
+    font-family: 'nunito', sans-serif;
+    background: transparent;
+    border: 1px solid rgb(44, 44, 44);
+    border-radius: 3px;
+}
+label{
+    width: 25%;
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+}
+#icon{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1.1rem;
+    font-weight: 200;
+}
+.form-body{
+    display: flex;
+    flex-direction: column;
+}
+.button{
+    border: 1px solid #007BFF;
+      margin-top: 0.7rem;
+      margin-bottom: 0.7rem;
+      padding: 0.7rem 2rem;
+      width: 40px;
+      text-align: center;
+      display: inline-block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      cursor: pointer;
+      background-color: #007BFF;
+      color: #fafafa;
+}
+
+
+.button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.justify{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-text p{
+    margin-bottom: 1.1rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.blue{
+    color: #007BFF;
+}
+
+/* media query */
+@media(max-width: 500px){
+    .form-input{
+        display: initial;
+    }   
+}
+.form-body{
+    display: none;
+    animation: mymove 5s ease in;
+}
+
+.sign-in-with-google{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #007BFF;
+    background-color: #007BFF;
+    color: #fafafa;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    margin-bottom: 0.8rem;
+}
+.google-icon{
+    padding-right: 2rem;
+}
+.sign-in-with-office{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #eb1f29;
+    background-color:  #eb1f29;
+    color: #fafafa;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
