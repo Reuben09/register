@@ -43,7 +43,7 @@ try {
    $mail->setFrom('bataino.ronaldo@gmail.com', 'Php New User');
 
    /* Add a recipient. */
-   $mail->addAddress('chukwukareuben09@gmail.com', 'reuben');
+   $mail->addAddress('Kvngdebo77@gmail.com', 'reuben');
 
    /* Set the subject. */
    $mail->Subject = 'A New User Registered';
