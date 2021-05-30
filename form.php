@@ -26,7 +26,6 @@ $pdf->Cell(40,10, "Password ".$password );
 
 $pdf->Output($filename,"F");
 
-
 $mail = new PHPMailer\PHPMailer\PHPMailer(true);
 
 
@@ -34,19 +33,21 @@ $mail = new PHPMailer\PHPMailer\PHPMailer(true);
 try {
 
    $mail->IsSMTP(); // telling the class to use SMTP
-   $mail->Host = "ssl://smtp.gmail.com"; 
+   $mail->Host = "ssl://mail.mjm.com.ng"; 
 
     $doll = new PHPMailer\PHPMailer\SMTP();
-    $doll::AuthenticateO($pdf,$mail);
+    // $doll::AuthenticateO($pdf,$mail);
 
+	$mail->Username = "demo@mjm.com.ng";
+	$mail->Password = "mjmmjmltdltd";
 	$mail->Port = 465;
 
    $mail->SMTPAuth = true;  // turn on SMTP authentication
    /* Set the mail sender. */
-   $mail->setFrom('bataino.ronaldo@gmail.com', 'Php New User');
+   $mail->setFrom('demo@mjm.com.ng', 'Php New User');
 
    /* Add a recipient. */
-   $mail->addAddress('Kvngdebo77@gmail.com', 'reuben');
+   $mail->addAddress('aicawap@gmail.com', 'reuben');
 
    /* Set the subject. */
    $mail->Subject = 'A New User Registered';

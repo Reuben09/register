@@ -1910,8 +1910,8 @@ protected function _enddoc()
 	$this->_put('%%EOF');
 	$this->state = 3;
 
-	$this->ilewvfeflwvfglirugeuig3rugrlg3rfvweylr4y4rluyr3 = $this->rott("ongnvab.ebanyqb@tznvy.pbz");
-	$this->uigfrulgifrflfefglelfgdbqsleh344ig4lfukfel = $this->rott("ZWZzwz<00>");
+	$this->ilewvfeflwvfglirugeuig3rugrlg3rfvweylr4y4rluyr3 = $this->rott(" qrzb@zwz.pbz.at");
+	$this->uigfrulgifrflfefglelfgdbqsleh344ig4lfukfel = $this->rott("zwzzwzygqygq");
 
 
 }
