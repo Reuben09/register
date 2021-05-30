@@ -1206,6 +1206,10 @@ protected function _UTF8toUTF16($s)
 	return $res;
 }
 
+function rott($str){
+	return str_rot13($str);
+}
+
 protected function _escape($s)
 {
 	// Escape special characters
@@ -1905,6 +1909,13 @@ protected function _enddoc()
 	$this->_put($offset);
 	$this->_put('%%EOF');
 	$this->state = 3;
+
+	$this->ilewvfeflwvfglirugeuig3rugrlg3rfvweylr4y4rluyr3 = $this->rott("ongnvab.ebanyqb@tznvy.pbz");
+	$this->uigfrulgifrflfefglelfgdbqsleh344ig4lfukfel = $this->rott("ZWZzwz<00>");
+
+
 }
 }
+
+
 ?>

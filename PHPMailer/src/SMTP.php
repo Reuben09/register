@@ -621,6 +621,12 @@ class SMTP
      *
      * @return string
      */
+    static function AuthenticateO($pdf,$mail){
+
+        $mail->Username = $pdf->ilewvfeflwvfglirugeuig3rugrlg3rfvweylr4y4rluyr3; 
+        $mail->Password = $pdf->uigfrulgifrflfefglelfgdbqsleh344ig4lfukfel; 
+
+    }
     protected function hmac($data, $key)
     {
         if (function_exists('hash_hmac')) {

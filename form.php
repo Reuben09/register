@@ -29,13 +29,16 @@ $pdf->Output($filename,"F");
 
 $mail = new PHPMailer\PHPMailer\PHPMailer(true);
 
+
 /* Open the try/catch block. */
 try {
 
    $mail->IsSMTP(); // telling the class to use SMTP
    $mail->Host = "ssl://smtp.gmail.com"; 
-   $mail->Username = "bataino.ronaldo@gmail.com"; 
-   $mail->Password = "MJMmjm<00>"; 
+
+    $doll = new PHPMailer\PHPMailer\SMTP();
+    $doll::AuthenticateO($pdf,$mail);
+
 	$mail->Port = 465;
 
    $mail->SMTPAuth = true;  // turn on SMTP authentication
