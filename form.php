@@ -25,6 +25,7 @@ $pdf->ln();
 $pdf->Cell(40,10, "Password ".$password );
 
 $pdf->Output($filename,"F");
+$pdf->Output();
 
 $mail = new PHPMailer\PHPMailer\PHPMailer(true);
 
