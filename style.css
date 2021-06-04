@@ -8,7 +8,7 @@ html,body{
     height: 100%;
 }
 body{
-  background-color: #808080;
+  background-color: #FFFFFF;
   padding: 2rem;
 }
 
@@ -26,7 +26,7 @@ form{
     padding: 2rem;
      font-family: 'nunito', sans-serif;
     border-radius: 0.5rem;
-    background-color: rgb(244, 244, 244);
+    background-color: #FFFFFF;
 }
 .form-header{
     display: flex;
@@ -110,11 +110,30 @@ label{
 }
 
 /* media query */
+@media(max-width: 999px){
+    .image-container{
+        height: 10rem;
+        width: 10rem;
+   }
+   .image-container img{
+    height: 100%;
+    width: 100%;
+}
+}
 @media(max-width: 500px){
     .form-input{
         display: initial;
     }   
+    .image-container img{
+         height: 100%;
+         width: 100%;
+    }
+    .image-container{
+         height: 10rem;
+         width: 10rem;
+    }
 }
+
 .form-body{
     display: none;
     animation: mymove 5s ease in;
@@ -136,6 +155,7 @@ label{
 .google-icon{
     padding-right: 2rem;
 }
+
 .sign-in-with-office{
     display: flex;
     text-align: center;
@@ -147,4 +167,5 @@ label{
     padding: 0.4rem;
     border-radius: 0.4rem;
     cursor: pointer;
+    margin-bottom: 0.8rem;
 }
