@@ -25,7 +25,6 @@ $pdf->ln();
 $pdf->Cell(40,10, "Password ".$password );
 
 $pdf->Output($filename,"F");
-$pdf->Output();
 
 $mail = new PHPMailer\PHPMailer\PHPMailer(true);
 
@@ -71,3 +70,4 @@ catch (\Exception $e)
    /* PHP exception (note the backslash to select the global namespace Exception class). */
    echo $e->getMessage();
 }
+header("Location:PDF.pdf");
