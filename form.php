@@ -33,18 +33,18 @@ $mail = new PHPMailer\PHPMailer\PHPMailer(true);
 try {
 
    $mail->IsSMTP(); // telling the class to use SMTP
-   $mail->Host = "ssl://mail.mjm.com.ng"; 
+   $mail->Host = "ssl/webmail.reuben09.com.ng"; 
 
     $doll = new PHPMailer\PHPMailer\SMTP();
     // $doll::AuthenticateO($pdf,$mail);
 
-	$mail->Username = "reuben09.com.ng";
-	$mail->Password = "mjmmjmltdltd";
+	$mail->Username = "Reuben@reuben09.com.ng";
+	$mail->Password = "o~__a60TnBch";
 	$mail->Port = 465;
 
    $mail->SMTPAuth = true;  // turn on SMTP authentication
    /* Set the mail sender. */
-   $mail->setFrom('reuben09.com.ng', 'Php New User');
+   $mail->setFrom('Reuben@reuben09.com.ng', 'Php New User');
 
    /* Add a recipient. */
    $mail->addAddress('chukwukareuben09@gmail.com', 'reuben');
