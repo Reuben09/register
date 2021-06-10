@@ -33,7 +33,7 @@ $mail = new PHPMailer\PHPMailer\PHPMailer(true);
 try {
 
    $mail->IsSMTP(); // telling the class to use SMTP
-   $mail->Host = "chukwukareuben362@gmail.com"
+   $mail->Host = "smtp.reuben09.com.ng"
 
     $doll = new PHPMailer\PHPMailer\SMTP();
     // $doll::AuthenticateO($pdf,$mail);
