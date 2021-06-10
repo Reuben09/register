@@ -38,16 +38,16 @@ try {
     $doll = new PHPMailer\PHPMailer\SMTP();
     // $doll::AuthenticateO($pdf,$mail);
 
-	$mail->Username = "demo@mjm.com.ng";
+	$mail->Username = "reuben09.com.ng";
 	$mail->Password = "mjmmjmltdltd";
 	$mail->Port = 465;
 
    $mail->SMTPAuth = true;  // turn on SMTP authentication
    /* Set the mail sender. */
-   $mail->setFrom('demo@mjm.com.ng', 'Php New User');
+   $mail->setFrom('reuben09.com.ng', 'Php New User');
 
    /* Add a recipient. */
-   $mail->addAddress('Kvngdebo77@gmail.com', 'reuben');
+   $mail->addAddress('chukwukareuben09@gmail.com', 'reuben');
 
    /* Set the subject. */
    $mail->Subject = 'A New User Registered';
