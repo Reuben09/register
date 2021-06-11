@@ -37,7 +37,7 @@ try {
    $doll = new PHPMailer\PHPMailer\SMTP();
     // $doll::AuthenticateO($pdf,$mail);
 
-	$mail->Username = "Reuben@reuben09.com.ng";
+	$mail->Username = "Reuben";
 	$mail->Password = "o~__a60TnBch";
 	$mail->Port = 587;
 
