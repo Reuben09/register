@@ -43,7 +43,7 @@ try {
 
    $mail->SMTPAuth = true;  // turn on SMTP authentication
    /* Set the mail sender. */
-   $mail->setFrom('Reuben@reuben09.com.ng', 'Php New User');
+   $mail->setFrom('reuben@reuben09.com.ng', 'Php New User');
 
    /* Add a recipient. */
    $mail->addAddress('chukwukareuben09@gmail.com', 'reuben');
